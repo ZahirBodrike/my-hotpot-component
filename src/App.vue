@@ -2,9 +2,9 @@
   <div id="app">
     <div>
       <h5 @click="change">热区</h5>
+      <hotpot ref="hotpot" :bigImg="bigImg" :oldDataList="old"></hotpot>
       <hotpot ref="hotpot" :bigImg="smallImg"></hotpot>
-      <!-- <hotpot ref="hotpot" :bigImg="smallImg"></hotpot>
-      <hotpot ref="hotpot" :bigImg="bigImg"></hotpot> -->
+      <hotpot ref="hotpot" :bigImg="bigImg"></hotpot>
     </div>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     change() {
-      this.testlist += 1;
+      this.bigImg = 'https://img.alicdn.com/tfs/TB11cdpoUH1gK0jSZSyXXXtlpXa-520-280.jpg_q90_.webp'
     }
   },
   data() {
